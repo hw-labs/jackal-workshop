@@ -35,7 +35,7 @@ Run the jackal:
 Jackal will be listening on port `9999`. Lets make that accessible:
 
 ```
-> ngrok 9999
+> ngrok http 9999
 ```
 
 Copy address and add to GitHub webhook:
