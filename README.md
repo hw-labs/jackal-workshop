@@ -23,7 +23,7 @@ Install the bundle:
 Run the jackal:
 
 ```
-> bundle exec jackal -c basic.rb
+> bundle exec jackal -c config.rb
 ```
 
 \o/
