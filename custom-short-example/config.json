@@ -1,0 +1,37 @@
+{
+  "jackal": {
+    "require": [
+      "carnivore-http",
+      "custom-short-example"
+    ]
+  },
+  "custom_short": {
+    "example": {
+      "config": {
+
+      },
+      "sources": {
+        "input": {
+          "type": "http_paths",
+          "args": {
+            "port": 9090,
+            "path": "/example",
+            "method": "post"
+          }
+        },
+        "output": {
+          "type": "http",
+          "args": {
+            "method": "post",
+            "endpoint": "https://api.d2o.io/v1/restore",
+            "auto_process": false,
+            "enable_processing": false
+          }
+        }
+      },
+      "callbacks": [
+        "CustomShort::Example::Runner"
+      ]
+    }
+  }
+}
