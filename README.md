@@ -23,7 +23,7 @@ Install the bundle:
 Run the jackal:
 
 ```
-> bundle exec jackal -c basic.rb
+> bundle exec jackal -c config.rb
 ```
 
 \o/
@@ -35,7 +35,7 @@ Run the jackal:
 Jackal will be listening on port `9999`. Lets make that accessible:
 
 ```
-> ngrok 9999
+> ngrok http 9999
 ```
 
 Copy address and add to GitHub webhook:
